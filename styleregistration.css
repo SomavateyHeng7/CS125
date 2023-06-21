@@ -1,0 +1,689 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "cabin", sans-serif;
+}
+
+.page-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+marquee {
+  align-items: center;
+  display: flex;
+  font-size: 2vh;
+  background-color: #c95050;
+  min-height: 3vh;
+}
+
+.header-container {
+  background-image: linear-gradient(rgba(10, 19, 54, 0.7), rgba(4, 9, 30, 0.7)), url(images/Registration.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+}
+.header-container nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container nav img {
+  width: 180px;
+}
+.header-container nav .nav-contact-links {
+  flex: 1;
+  text-align: right;
+}
+.header-container nav .nav-contact-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.header-container nav .nav-contact-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.header-container nav .nav-contact-links ul li :hover::after {
+  width: 100%;
+}
+.header-container nav .nav-contact-links ul li ::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.header-container nav .text-contactus {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header-container nav .text-contactus h1 {
+  font-size: 1.5rem;
+}
+
+.form-info {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.form-info .form-registration {
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff3f3;
+  border-radius: 50px;
+}
+.form-info .form-registration h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 40px;
+}
+.form-info .form-registration p {
+  display: flex;
+  justify-content: center;
+  line-height: 20px;
+  width: 100%;
+  font-size: 15px;
+}
+.form-info .form-registration .fullname {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  height: auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.form-info .form-registration .fullname .fname {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .fullname .fname label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .fullname .fname input[type=text] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .fullname .lname {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .fullname .lname label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .fullname .lname input[type=text] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .citizen-nation {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  height: auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.form-info .form-registration .citizen-nation .citizen {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .citizen-nation .citizen label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .citizen-nation .citizen input[type=text] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .citizen-nation .nation {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .citizen-nation .nation label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .citizen-nation .nation input[type=text] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .gen-date-phone {
+  display: grid;
+  grid-template-columns: auto auto 47.5%;
+  width: 100%;
+  height: auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.form-info .form-registration .gen-date-phone .gender {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: start;
+  align-items: center;
+}
+.form-info .form-registration .gen-date-phone .gender .gender1 {
+  display: flex;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .gen-date-phone .gender .gender-M {
+  display: flex;
+  gap: 10px;
+}
+.form-info .form-registration .gen-date-phone .gender .gender-F {
+  display: flex;
+  gap: 10px;
+}
+.form-info .form-registration .gen-date-phone .date-of-birth {
+  display: grid;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+}
+.form-info .form-registration .gen-date-phone .date-of-birth .date-of-birth1 {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .gen-date-phone .date-of-birth .date-of-birth-row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.form-info .form-registration .gen-date-phone .date-of-birth .date-of-birth-row .date .date-control {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .gen-date-phone .date-of-birth .date-of-birth-row .month .month-control {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .gen-date-phone .date-of-birth .date-of-birth-row .year .year-control {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .gen-date-phone .phonenumber {
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+}
+.form-info .form-registration .gen-date-phone .phonenumber label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .gen-date-phone .phonenumber .phone-control {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .email-address {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  height: auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.form-info .form-registration .email-address .email {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .email-address .email label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .email-address .email input[type=email] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .email-address .address {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .email-address .address label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .email-address .address input[type=text] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .E-c-name-phone {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  height: auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.form-info .form-registration .E-c-name-phone .e-c-name {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .E-c-name-phone .e-c-name label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .E-c-name-phone .e-c-name input[type=text] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .E-c-name-phone .e-c-phone {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .E-c-name-phone .e-c-phone label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .E-c-name-phone .e-c-phone input[type=number] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .E-c-email-address {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  height: auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.form-info .form-registration .E-c-email-address .e-c-email {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .E-c-email-address .e-c-email label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .E-c-email-address .e-c-email input[type=email] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .E-c-email-address .e-c-address {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .E-c-email-address .e-c-address label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .E-c-email-address .e-c-address input[type=text] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .E-c-relationship {
+  display: grid;
+  width: 47.5%;
+}
+.form-info .form-registration .E-c-relationship label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .E-c-relationship select {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .upload-info {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 100%;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: start;
+  align-items: center;
+}
+.form-info .form-registration .upload-file {
+  display: flex;
+  align-items: center;
+  width: 47.5%;
+}
+.form-info .form-registration .upload-file label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .upload-file input[type=file] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  background-color: #fff;
+  font-size: 15px;
+}
+.form-info .form-registration .highschool-info {
+  display: grid;
+  width: 100%;
+  height: auto;
+}
+.form-info .form-registration .highschool-info .highschool-text h1 {
+  display: flex;
+  justify-content: start;
+  font-size: 20px;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .highschool-info .highschool-text p {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: start;
+  line-height: 20px;
+  width: 100%;
+  font-size: 15px;
+}
+.form-info .form-registration .highschool-info .highschool-control {
+  display: grid;
+  grid-template-columns: 65% 30%;
+  width: 100%;
+  height: auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.form-info .form-registration .highschool-info .highschool-control .highschool-name {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .highschool-info .highschool-control .highschool-name label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .highschool-info .highschool-control .highschool-name input[type=text] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .highschool-info .highschool-control .graduation {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .highschool-info .highschool-control .graduation label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .highschool-info .highschool-control .graduation input[type=number] {
+  display: flex;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-size: 15px;
+}
+.form-info .form-registration .eng-pro .eng-pro-text h1 {
+  display: flex;
+  justify-content: start;
+  font-size: 20px;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .eng-pro .eng-pro-radio {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 100%;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.form-info .form-registration .preferred-major {
+  display: grid;
+  width: 100%;
+}
+.form-info .form-registration .preferred-major .preferred-major-text h1 {
+  display: flex;
+  justify-content: start;
+  font-size: 20px;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.form-info .form-registration .preferred-major .preferred-major-text p {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: start;
+  line-height: 20px;
+  width: 100%;
+  font-size: 15px;
+}
+.form-info .form-registration .preferred-major .preferred-major-control {
+  display: grid;
+  gap: 10px;
+}
+/* .btn-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+} */
+.btn-submit 
+{
+  margin-top:2rem;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn-submit:hover {
+  background-color: #45a049;
+}
+
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 40px 0;
+  background-image: linear-gradient(rgba(14, 16, 25, 0.916), rgba(23, 23, 25, 0.7)), url(images/nightuni.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.footer .footline {
+  border-top: 1px solid white;
+  margin-top: 20px;
+  padding-top: 10px;
+}/*# sourceMappingURL=styleregistration.css.map */

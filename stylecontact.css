@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cabin", sans-serif;
+  }
+  
+  .page-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  marquee {
+    align-items: center;
+    display: flex;
+    font-size: 2vh;
+    background-color: #c95050;
+    min-height: 3vh;
+  }
+  
+  .header-container {
+    background-image: linear-gradient(rgba(10, 19, 54, 0.7), rgba(4, 9, 30, 0.7)), url(images/contactus.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+  }
+  .header-container nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-container nav img {
+    width: 180px;
+  }
+
+  .header-container nav .nav-contact-links {
+    flex: 1;
+    text-align: right;
+  }
+  .header-container nav .nav-contact-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .header-container nav .nav-contact-links ul li :hover::after {
+    width: 100%;
+  }
+  .header-container nav .nav-contact-links ul li ::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+  }
+  .header-container nav .nav-contact-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .header-container nav .text-contactus {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .header-container nav .text-contactus h1 {
+    font-size: 1.5rem;
+  }
+  
+  .form-info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .form-info .form-leftside {
+    justify-content: flex-start;
+    width: 48%;
+    padding: 20px;
+    background-color: #fff3f3;
+    border-radius: 50px;
+  }
+  .form-info .form-leftside h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 40px;
+  }
+  .form-info .form-leftside p {
+    display: flex;
+    justify-content: center;
+    line-height: 60px;
+    width: 100%;
+    font-size: 25px;
+  }
+  .form-info .form-leftside input[type=text], .form-info .form-leftside select, .form-info .form-leftside textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical;
+  }
+  .form-info .form-leftside input[type=email], .form-info .form-leftside select, .form-info .form-leftside textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical;
+  }
+  .form-info .form-leftside input[type=number], .form-info .form-leftside select, .form-info .form-leftside textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical;
+  }
+  .form-info .form-leftside input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .form-info .form-leftside input[type=submit] :hover {
+    background-color: #45a049;
+  }
+  .form-info .info-rightside {
+    justify-content: flex-end;
+    width: 48%;
+    padding: 20px;
+    background-color: #fff3f3;
+    border-radius: 50px;
+  }
+  .form-info .info-rightside h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 40px;
+    padding: 20px;
+  }
+  .form-info .info-rightside p {
+    display: flex;
+    line-height: 40px;
+    width: 100%;
+    font-size: 25px;
+  }
+  
+  .info-container {
+    margin-top: 50px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff3f3;
+    border-radius: 50px;
+  }
+  .info-container h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+  }
+  .info-container p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .footer {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 40px 0;
+    background-image: linear-gradient(rgba(14, 16, 25, 0.916), rgba(23, 23, 25, 0.7)), url(images/nightuni.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .footer .footline {
+    border-top: 1px solid white;
+    margin-top: 20px;
+    padding-top: 10px;
+  }/*# sourceMappingURL=stylecontact.css.map */

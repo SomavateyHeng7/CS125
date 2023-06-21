@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-MAMA University</title>
+    <script src="https://kit.fontawesome.com/0e1ed34929.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleregistration.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div class="header-container">
+        <nav>
+            <a href="index.html"><img src="images/Mama1.png"></a>
+            <div class="nav-contact-links" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academic.php">Academic</a></li>
+                    <li><a href="admission.php">Admission</a></li>
+                    <li><a href="enrollment.html">Enrollment</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                </ul>
+            </div>
+            <div class="text-contactus">
+                <h1>Registration</h1>
+            
+            </div>
+            
+        </nav>
+    </div>
+    <marquee behavior="scroll" direction="right" style="font-family:'Poppins';">For More Information Please Visit Us @MAMA_University</marquee>
+    <div class="form-info page-wrapper">
+        <div class="form-registration">
+            <h1>Admission Application Form</h1>
+            <p>Please input information as shown on your National Identity Card, Passport, or Birth Certificate, whichever identification document you will submit for our review. Do not Add or Remove space or any other symbols, unless also shown in the identification document.</p>
+            <form onsubmit="return false;" action="">
+
+                <div class="fullname">
+                    <div class="fname">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="firstname" name="fname" value maxlength="250" aria-describedby="fname-error" aria-invalid="true">
+                    </div>
+            
+                    <div class="lname">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lastname" name="lname" value maxlength="250" aria-describedby="lname-error" aria-invalid="true">
+                
+                    </div>
+                </div>
+
+                <div class="citizen-nation">
+                    <div class="citizen">
+                        <label for="Citizenship">Citizenship</label>
+                        <input type="text" id="citizenship" name="citizenship" value maxlength="250" aria-describedby="citizenship-error" aria-invalid="true">
+            
+                    </div>
+                    <div class="nation">
+                        <label for="nation">Nationality</label>
+                        <input type="text" id="nationality" name="nationality" value maxlength="250" aria-describedby="lname-error" aria-invalid="true">
+                
+                    </div>
+                </div>
+                <div class="gen-date-phone">
+                    <div class="gender">
+                        <label for="gender" class="gender1">Gender</label>
+                        <br>
+                        <label class="gender-M">
+                            <input id="gender-m" type="radio" name="gender" value="0" checked>
+                            Male
+                        </label>
+                        <label class="gender-F">
+                            <input id="gender-f" type="radio" name="gender" value="1" checked>
+                            Female
+                        </label>
+                    </div>
+    
+                    <div class="date-of-birth">
+                        <label for="date-of-birth" class="date-of-birth1">
+                            Date of Birth (dd/mm/yyyy)
+                        </label>
+                        <div class="date-of-birth-row">
+                            <div class="date">
+                                <select id="day" name="day" class="date-control">
+                                    <option value>Day</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </div>
+                            <div class="month">
+                                <select id="month" name="month" class="month-control" aria-describedby="month-error" aria-invalid="true">
+                                    <option value>Month</option>
+                                    <option value="Jan">Jan</option>
+                                    <option value="Feb">Feb</option>
+                                    <option value="Mar">Mar</option>
+                                    <option value="Apr">Apr</option>
+                                    <option value="May">May</option>
+                                    <option value="Jun">Jun</option>
+                                    <option value="Jul">Jul</option>
+                                    <option value="Aug">Aug</option>
+                                    <option value="Sep">Sep</option>
+                                    <option value="Oct">Oct</option>
+                                    <option value="Nov">Nov</option>
+                                    <option value="Dec">Dec</option>
+                                </select>
+                            </div>
+                            <div class="year">
+                                <select id="year" name="year" class="year-control" aria aria-describedby="year-error" aria-invalid="true">\
+                                    <option value>Year</option>
+                                    <option value="1950">1950</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1990">1990</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                    
+                    </div>
+                    
+                    <div class="phonenumber">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="number" name="phone-number" id="phone" class="phone-control" value aria-describedby="phone-number-error" aria-invalid="true">
+                    </div>
+                </div>
+
+                <div class="email-address">
+                    
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value maxlength="100" aria-describedby="email-error" aria invalid="true">
+                        
+                    </div>
+
+
+                    <div class="address">
+                        <label for="address">Current Address</label>
+                        <input type="text" class="address-control" name="address" id="address" value maxlength="250" aria-describedby="address-error" aria-invalid="true">
+                    
+                    </div>
+                </div>
+                
+                <div class="E-c-name-phone">
+                    <div class="e-c-name">
+                        <label for="e-c-name">Emergency contact name</label>
+                        <input type="text" id="emer_name" name="emergency-name" value maxlength="250" aria-describedby="emergency-name-error" aria-invalid="true">
+                    
+                    </div>
+                    <div class="e-c-phone">
+                        <label for="e-c-phone">Emergency contact phone</label>
+                        <input type="number" id="emer_phone" name="emergency-phone" value maxlength="250">
+                
+                    </div>
+                </div>
+
+
+                <div class="E-c-email-address">
+                    <div class="e-c-email">
+                        <label for="e-c-email">Emergency contact email</label>
+                        <input type="email" id="emer_email" name="emergency-email" value maxlength="250" aria-describedby="emergency-name-error" aria-invalid="true">
+                
+                    </div>
+                    <div class="e-c-address">
+                        <label for="E-c-address">Emergency contact address</label>
+                        <input type="text" id="emer_address" name="emergency-email" value maxlength="250" aria-describedby="emergency-name-error" aria-invalid="true">
+                
+                    </div>
+                </div>
+
+
+                <div class="E-c-relationship">
+                    <label for="e-c-name">Emergency contact relationship</label>
+                    <select id="emer_relation" name="emergency-relationship" aria-describedby="emergency-relationship-error" aria-invalid="true">
+                        <option value>--- Please select option ---</option>
+                        <option value="Parent/Guadian">Parent/Guardian</option>
+                        <option value="Partner">Partner</option>
+                        <option value="Relative/Sibling">Relative/Sibling</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="highschool-info">
+                    <div class="highschool-text">
+                        <h1>Academic Information</h1>
+                        <p>High School</p>
+                    </div>
+                    <div class="highschool-control">
+                        <div class="highschool-name">
+                            <label for="highschool-info">High School Name</label>
+                            <input type="text" id="school" name="highschool-name" value maxlength="250" aria-describedby="emergency-name-error" aria-invalid="true">
+
+                        </div>
+                        <div class="graduation">
+                            <label for="graduation-year">Graduation (or Expected) Year</label>
+                            <input type="number" id="grad" name="graduation-year" value maxlength="4" aria-describedby="emergency-name-error" aria-invalid="true">
+                   
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="eng-pro">
+                    <div class="eng-pro-text">
+                        <h1>English Proficiency</h1>
+                        </div>
+                        <div class="eng-pro-radio">
+                            <label for="eng-proficiency">Did you take the IELTS or TOEFL test?</label>
+                            <label class="ielts-radio">
+                                <input id="test-1" type="radio" name="eng-proficiency" value="1" checked>
+                                IELTS
+                            </label>
+                            <label class="toefl-radio">
+                                <input id="test-2" type="radio" name="eng-proficiency" value="2" checked>
+                                TOEFL
+                            </label>
+                            <label class="no-radio">
+                                <input id="test-3" type="radio" name="eng-proficiency" value="0" checked>
+                                NO
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="preferred-major">
+                        <div class="preferred-major-text">
+                            <h1>Preferred Major</h1>
+                            <p>Note: You may change your major anytime during your freshman and sophomore years except for full scholarship students. After completing your sophomore year, eligible students may apply to participate in a dual degree pathway with the respective university.</p>
+                        </div>
+                        <div class="preferred-major-control">
+                            <label class="bachelor">
+                                <input id="major-0" type="radio" name="bachelor" value="0" checked>
+                                Accounting and Finance
+                            </label>
+                            <label class="bachelor">
+                                <input id="major-1" type="radio" name="bachelor" value="1" checked>
+                                Architecture
+                            </label>
+                            <label class="bachelor">
+                                <input id="major-2" type="radio" name="bachelor" value="2" checked>
+                                Business Administration
+                            </label>
+                            <label class="bachelor">
+                                <input id="major-3" type="radio" name="bachelor" value="3" checked>
+                                Banking and Finance
+                            </label>
+                            <label class="bachelor">
+                                <input id="major-4" type="radio" name="bachelor" value="4" checked>
+                                Civil Engineering
+                            </label>
+                            <label class="bachelor">
+                                <input id="major-5" type="radio" name="bachelor" value="5" checked>
+                                Computer Science
+                            </label>
+                            <label class="bachelor">
+                                <input id="major-6" type="radio" name="bachelor" value="6" checked>
+                                Economics
+                            </label>
+                            <label class="bachelor">
+                                <input id="major-7" type="radio" name="bachelor" value="7" checked>
+                                International Relations
+                            </label>
+                            <label class="bachelor">
+                                <input id="major-8" type="radio" name="bachelor" value="8" checked>
+                                Laws
+                            </label>
+                            
+                        </div>
+
+                </div>
+            
+                <div onclick="addToRegistration()" class="btn-submit">
+                    Submit
+                </div>
+            
+              </form>
+                
+            
+        </div>
+       
+    </div>
+
+    <div class="footer" style="color:white"><br>
+        <h3>Our Social Media</h3><br>
+        <p>For any more information, please kindly visit our social media page.</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div><br>
+        <p>Made with <i class="fa fa-heart-o"></i></i> By Sokleng Ly<br> <i class="fab fa-facebook-f"> Soklengg</i> <i class="fa fa-instagram">Sokleng.24</i> </p><br>
+        <div class="footline">
+            <div id="powered">@copyright 2022 MAMA university, All Rights Reserved.</div>
+        </div>
+    </div>
+    <script>
+        function addToRegistration() {
+            let userGender;
+            let userTest;
+            let userMajor;
+
+            if(document.getElementById('gender-m').checked) {
+                userGender = 0;
+            }
+            else {
+                userGender = 1;
+            }
+
+            if(document.getElementById('test-1').checked) {
+                userTest = 1;
+            }
+            else if(document.getElementById('test-2').checked){
+                userTest = 2;
+            }
+            else {
+                userTest = 0;
+            }
+
+            if(document.getElementById('major-1').checked) {
+                userMajor = 1;
+            }
+            else if(document.getElementById('major-2').checked){
+                userMajor = 2;
+            }
+            else if(document.getElementById('major-3').checked){
+                userMajor = 3;
+            }
+            else if(document.getElementById('major-4').checked){
+                userMajor = 4;
+            }
+            else if(document.getElementById('major-5').checked){
+                userMajor = 5;
+            }
+            else if(document.getElementById('major-6').checked){
+                userMajor = 6;
+            }
+            else if(document.getElementById('major-7').checked){
+                userMajor = 7;
+            }
+            else if(document.getElementById('major-8').checked){
+                userMajor = 8;
+            } else {
+                userMajor = 0;
+            }
+
+            let birthdate = document.getElementById('day').value + "/" + document.getElementById('month').value + "/" + document.getElementById('year').value;
+            let registration = {
+                firstname : document.getElementById('firstname').value,
+                lastname : document.getElementById('lastname').value,
+                citizenship : document.getElementById('citizenship').value,
+                nationality : document.getElementById('nationality').value,
+                gender : userGender,
+                birthdate : birthdate,
+                email : document.getElementById('email').value,
+                phone : document.getElementById('phone').value,
+                address : document.getElementById('address').value,
+                emer_name : document.getElementById('emer_name').value,
+                emer_phone : document.getElementById('emer_phone').value,
+                emer_email : document.getElementById('emer_email').value,
+                emer_relation : document.getElementById('emer_relation').value,
+                emer_address : document.getElementById('emer_address').value,
+                school : document.getElementById('school').value,
+                grad : document.getElementById('grad').value,
+                tests: userTest,
+                major: userMajor
+            }
+            console.log(registration);
+            $.ajax({
+                type: 'POST',        
+                data: { 'registrationData': JSON.stringify(registration)},
+                url: 'registration.php',
+                success: function(response){
+                    var jsonData = JSON.parse(response);
+                    console.log(jsonData);
+                    if(jsonData.success) {
+                        window.location.href = "registration.html";
+                    }
+                    else {
+                        console.log("cant create");
+                    }
+                }
+            });
+        }
+    </script>
+    </body>
+</html>
